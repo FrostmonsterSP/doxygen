@@ -2356,7 +2356,7 @@ class TranslatorRussian : public Translator
     switch (hl) {
     case FileMemberHighlight::All:
       if (Config_getBool(OPTIMIZE_OUTPUT_FOR_C)) {
-        result += "функций, переменных, макроопределений, перечислителей и "
+        result += "функций, переменных, макроопределений, перечислений и "
                   "определений типов";
       } else {
         result += "прикреплённых файлов";
@@ -2378,10 +2378,10 @@ class TranslatorRussian : public Translator
       result += "словарей";
       break;
     case FileMemberHighlight::Enums:
-      result += "перечислителей";
+      result += "перечислений";
       break;
     case FileMemberHighlight::EnumValues:
-      result += "значений перечислителей";
+      result += "значений перечислений";
       break;
     case FileMemberHighlight::Defines:
       result += "макроопределений";
@@ -2422,10 +2422,10 @@ class TranslatorRussian : public Translator
       result += "определений типов";
       break;
     case ClassMemberHighlight::Enums:
-      result += "перечислителей";
+      result += "перечислений";
       break;
     case ClassMemberHighlight::EnumValues:
-      result += "значений перечислителей";
+      result += "значений перечисления";
       break;
     case ClassMemberHighlight::Properties:
       result += "свойств";
@@ -2489,12 +2489,12 @@ class TranslatorRussian : public Translator
       pluralResult = "словарей";
       break;
     case NamespaceMemberHighlight::Enums:
-      singularResult = "перечислителя";
-      pluralResult = "перечислителей";
+      singularResult = "перечисление";
+      pluralResult = "перечислений";
       break;
     case NamespaceMemberHighlight::EnumValues:
       singularResult = "значения";
-      pluralResult = "значений перечислителей";
+      pluralResult = "значений перечисления";
       break;
     case NamespaceMemberHighlight::Total: // for completeness
       break;
@@ -2547,12 +2547,12 @@ class TranslatorRussian : public Translator
       pluralResult = "определений типов";
       break;
     case ModuleMemberHighlight::Enums:
-      singularResult = "перечислителя";
-      pluralResult = "перечислителей";
+      singularResult = "перечисления";
+      pluralResult = "перечислений";
       break;
     case ModuleMemberHighlight::EnumValues:
       singularResult = "значения";
-      pluralResult = "значений перечислителей";
+      pluralResult = "значений перечисления";
       break;
     case ModuleMemberHighlight::Total: // for completeness
       break;
